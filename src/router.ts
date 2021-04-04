@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import About from './components/About.vue';
 import Home from './components/Home.vue';
+import RtcTest from './components/RtcTest.vue';
 
 const history = createWebHistory();
 
@@ -10,8 +10,8 @@ const routes = [
 		component: Home,
 	},
 	{
-		path: '/about',
-		component: About,
+		path: '/rtc',
+		component: RtcTest,
 	},
 ];
 

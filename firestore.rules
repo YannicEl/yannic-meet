@@ -8,5 +8,17 @@ service cloud.firestore {
     match /test/{testId} {
     	allow read, write: if true;
     }
+
+    match /calls/{callId} {
+    	allow read, write: if true;
+       
+      match /offerCandidates/{offerId} {
+        	allow read, write: if true;
+      }
+
+      match /answerCandidates/{answerId} {
+        	allow read, write: if true;
+      }
+    }
   }
 }
